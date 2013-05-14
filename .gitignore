@@ -7,3 +7,5 @@
 # Build Products #
 target/
 bin/
+hadoop-learning.jar
+

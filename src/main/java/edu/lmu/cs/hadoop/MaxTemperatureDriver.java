@@ -10,7 +10,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-//Identical to v4 except for v5 mapper
 public class MaxTemperatureDriver extends Configured implements Tool {
 
   @Override

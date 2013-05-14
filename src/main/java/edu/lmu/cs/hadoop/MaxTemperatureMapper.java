@@ -1,5 +1,5 @@
 package edu.lmu.cs.hadoop;
-// cc MaxTemperatureMapperV5 Mapper for maximum temperature example
+
 import java.io.IOException;
 
 import org.apache.hadoop.io.IntWritable;
@@ -7,7 +7,6 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-// vv MaxTemperatureMapperV5
 public class MaxTemperatureMapper
   extends Mapper<LongWritable, Text, Text, IntWritable> {
 
