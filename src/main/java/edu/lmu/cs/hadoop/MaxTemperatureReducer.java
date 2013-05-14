@@ -6,6 +6,12 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
+/**
+ * Reducer for the MaxTemperature Map-Reduce application. Iterates through values and returns the largest (max) integer
+ * in the collection.
+ *
+ * @author Hadoop-Book
+ */
 public class MaxTemperatureReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
     @Override
