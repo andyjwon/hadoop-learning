@@ -10,15 +10,15 @@
       <configuration>
         <property>
           <name>mapred.mapper.class</name>
-          <value>OldMaxTemperature$OldMaxTemperatureMapper</value>
+          <value>edu.lmu.cs.hadoop.MaxTemperatureMapper</value>
         </property>
         <property>
           <name>mapred.combiner.class</name>
-          <value>OldMaxTemperature$OldMaxTemperatureReducer</value>
+          <value>edu.lmu.cs.hadoop.MaxTemperatureReducer</value>
         </property>
         <property>
           <name>mapred.reducer.class</name>
-          <value>OldMaxTemperature$OldMaxTemperatureReducer</value>
+          <value>edu.lmu.cs.hadoop.MaxTemperatureReducer</value>
         </property>
         <property>
           <name>mapred.output.key.class</name>
@@ -27,10 +27,10 @@
         <property>
           <name>mapred.output.value.class</name>
           <value>org.apache.hadoop.io.IntWritable</value>
-        </property>        
+        </property>
         <property>
           <name>mapred.input.dir</name>
-          <value>/user/${wf:user()}/input/ncdc/micro</value>
+          <value>/user/${wf:user()}/input</value>
         </property>
         <property>
           <name>mapred.output.dir</name>
